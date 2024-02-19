@@ -42,14 +42,14 @@ const Navbar = ({ selectedLanguage, onLanguageChange }) => {
   return (
     <nav className={`navbar ${isOpen ? "active" : ""}`}>
       <div className="navbar-brand">
-        <Link to="/">
+        <Link to="/makrem">
           <h1 style={{ display: 'none' }}>Dev.</h1>
         </Link>
       </div>
       <div className="navbar-menu">
         <ul className={`menu ${isOpen ? "active" : ""}`}>
           <li>
-            <NavLink to="/" className={({ isActive, isPending }) =>
+            <NavLink to="/makrem" className={({ isActive, isPending }) =>
                   isPending ? "pending" : isActive ? "active-link" : ""
                 }>
               {translations[selectedLanguage].home}
