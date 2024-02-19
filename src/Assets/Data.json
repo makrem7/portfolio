@@ -40,7 +40,35 @@
         "img": "https://i.ibb.co/72BrmQ5/Capture-d-cran-2024-02-15-124713.png",
         "heading": "HBMIS",
         "link": "https://www.hbmis-tn.com/",
-        "github": "https://github.com/dev-palwar/Anime-cli",
+        "github": "",
+        "tech_Stack": [
+            "angular",
+            "css",
+            "html",
+            "javascript",
+            "typescript"
+        ]
+    },
+    {
+        "id": 4,
+        "img": "https://i.ibb.co/72BrmQ5/Capture-d-cran-2024-02-15-124713.png",
+        "heading": "HBMIS",
+        "link": "https://www.hbmis-tn.com/",
+        "github": "",
+        "tech_Stack": [
+            "angular",
+            "css",
+            "html",
+            "javascript",
+            "typescript"
+        ]
+    },
+    {
+        "id": 4,
+        "img": "https://i.ibb.co/72BrmQ5/Capture-d-cran-2024-02-15-124713.png",
+        "heading": "HBMIS",
+        "link": "https://www.hbmis-tn.com/",
+        "github": "",
         "tech_Stack": [
             "angular",
             "css",
