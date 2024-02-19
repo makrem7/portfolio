@@ -69,13 +69,13 @@ const Navbar = ({ selectedLanguage, onLanguageChange }) => {
               {translations[selectedLanguage].work}
             </NavLink>
           </li>
-          <li>
+          {/*<li>
             <NavLink to="/contact" className={({ isActive, isPending }) =>
                   isPending ? "pending" : isActive ? "active-link" : ""
                 }>
               {translations[selectedLanguage].contact}
             </NavLink>
-          </li>
+          </li>*/}
           <li>
             <a href="mailto:makrem.mltifi@gmail.com" target="_blank">
               <button>{translations[selectedLanguage].hireMe}</button>
