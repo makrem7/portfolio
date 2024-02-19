@@ -56,14 +56,14 @@ const Navbar = ({ selectedLanguage, onLanguageChange }) => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about" className={({ isActive, isPending }) =>
+            <NavLink to="/portfolio/about" className={({ isActive, isPending }) =>
                   isPending ? "pending" : isActive ? "active-link" : ""
                 }>
               {translations[selectedLanguage].about}
             </NavLink>
           </li>
           <li>
-            <NavLink to="/work" className={({ isActive, isPending }) =>
+            <NavLink to="/portfolio/work" className={({ isActive, isPending }) =>
                   isPending ? "pending" : isActive ? "active-link" : ""
                 }>
               {translations[selectedLanguage].work}

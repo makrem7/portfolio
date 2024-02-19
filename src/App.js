@@ -19,9 +19,9 @@ function App() {
         <Navbar selectedLanguage={selectedLanguage} onLanguageChange={handleLanguageChange} />
         <Routes>
           <Route path="/portfolio" element={<Home selectedLanguage={selectedLanguage} />} />
-          <Route path="/about" element={<About selectedLanguage={selectedLanguage} />} />
-          <Route path="/work" element={<Work selectedLanguage={selectedLanguage} />} />
-          <Route path="/contact" element={<Contact selectedLanguage={selectedLanguage} />} /> {/* Include the Contact component */}
+          <Route path="/portfolio/about" element={<About selectedLanguage={selectedLanguage} />} />
+          <Route path="/portfolio/work" element={<Work selectedLanguage={selectedLanguage} />} />
+          <Route path="/portfolio/contact" element={<Contact selectedLanguage={selectedLanguage} />} /> {/* Include the Contact component */}
         </Routes>
       </Router>
     </>
