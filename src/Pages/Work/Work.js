@@ -6,10 +6,19 @@ import Heading from "../../Components/Heading/Heading";
 import { LoadMore } from "../../Components/Loader/Loader";
 import { motion } from "framer-motion";
 
-import { BiLogoAngular, BiLogoHtml5, BiLogoCss3, BiLogoJavascript, BiLogoNodejs, BiLogoMongodb, BiLogoFlutter } from 'react-icons/bi';
-import { SiTailwindcss, SiExpress, SiDocker, SiSwagger, SiGit } from 'react-icons/si';
-import { FaAndroid, FaApple } from 'react-icons/fa';
-import { DiLinux, DiApple } from 'react-icons/di';
+import {
+  BiLogoAngular,
+  BiLogoHtml5,
+  BiLogoCss3,
+  BiLogoJavascript,
+  BiLogoNodejs,
+  BiLogoMongodb,
+  BiLogoFlutter,
+  BiLogoTypescript,
+} from "react-icons/bi";
+import { SiTailwindcss, SiExpress, SiDocker, SiSwagger, SiGit } from "react-icons/si";
+import { FaAndroid, FaApple } from "react-icons/fa";
+import { DiLinux, DiApple } from "react-icons/di";
 import { animations } from "../../Styles/Animations/Animations";
 
 const Work = ({ selectedLanguage }) => {
@@ -32,16 +41,16 @@ const Work = ({ selectedLanguage }) => {
   const translations = {
     en: {
       heading: "My Work",
-      showMore: "Show More"
+      showMore: "Show More",
     },
     de: {
       heading: "Meine Arbeit",
-      showMore: "Mehr anzeigen"
+      showMore: "Mehr anzeigen",
     },
     fr: {
       heading: "Mon travail",
-      showMore: "Voir plus"
-    }
+      showMore: "Voir plus",
+    },
   };
 
   return (
@@ -61,38 +70,42 @@ const Work = ({ selectedLanguage }) => {
           style={{ color: "#dd0031", cursor: "pointer" }}
           onClick={() => filterProjectsBySkill("angular")}
         />
-          <BiLogoHtml5
-        style={{ color: "#e34f26", cursor: "pointer" }}
-        onClick={() => filterProjectsBySkill("html5")}
-      />
-      <BiLogoCss3
-        style={{ color: "#264de4", cursor: "pointer" }}
-        onClick={() => filterProjectsBySkill("css3")}
-      />
-      <BiLogoJavascript
-        style={{ color: "#f7df1e", cursor: "pointer" }}
-        onClick={() => filterProjectsBySkill("javascript")}
-      />
-      <BiLogoNodejs
-        style={{ color: "#3c873a", cursor: "pointer" }}
-        onClick={() => filterProjectsBySkill("node.js")}
-      />
-      <BiLogoMongodb
-        style={{ color: "#4db33d", cursor: "pointer" }}
-        onClick={() => filterProjectsBySkill("mongodb")}
-      />
-      <BiLogoFlutter
-        style={{ color: "#02569b", cursor: "pointer" }}
-        onClick={() => filterProjectsBySkill("flutter")}
-      />
-      <FaAndroid
-        style={{ color: "#a4c639", cursor: "pointer" }}
-        onClick={() => filterProjectsBySkill("android")}
-      />
-      <DiApple
-        style={{ color: "#a8b5b8", cursor: "pointer" }}
-        onClick={() => filterProjectsBySkill("ios")}
-      />
+        <BiLogoHtml5
+          style={{ color: "#e34f26", cursor: "pointer" }}
+          onClick={() => filterProjectsBySkill("html5")}
+        />
+        <BiLogoCss3
+          style={{ color: "#264de4", cursor: "pointer" }}
+          onClick={() => filterProjectsBySkill("css3")}
+        />
+        <BiLogoJavascript
+          style={{ color: "#f7df1e", cursor: "pointer" }}
+          onClick={() => filterProjectsBySkill("javascript")}
+        />
+        <BiLogoTypescript
+          style={{ color: "#007acc", cursor: "pointer" }} 
+          onClick={() => filterProjectsBySkill("typescript")}
+        />
+        <BiLogoNodejs
+          style={{ color: "#3c873a", cursor: "pointer" }}
+          onClick={() => filterProjectsBySkill("node.js")}
+        />
+        <BiLogoMongodb
+          style={{ color: "#4db33d", cursor: "pointer" }}
+          onClick={() => filterProjectsBySkill("mongodb")}
+        />
+        <BiLogoFlutter
+          style={{ color: "#02569b", cursor: "pointer" }}
+          onClick={() => filterProjectsBySkill("flutter")}
+        />
+        <FaAndroid
+          style={{ color: "#a4c639", cursor: "pointer" }}
+          onClick={() => filterProjectsBySkill("android")}
+        />
+        <DiApple
+          style={{ color: "#a8b5b8", cursor: "pointer" }}
+          onClick={() => filterProjectsBySkill("ios")}
+        />
         {/* Add other icons with onClick handlers */}
       </motion.div>
       <div className="cards">

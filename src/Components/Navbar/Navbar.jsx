@@ -56,14 +56,14 @@ const Navbar = ({ selectedLanguage, onLanguageChange }) => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/portfolio/about" className={({ isActive, isPending }) =>
+            <NavLink to="/about" className={({ isActive, isPending }) =>
                   isPending ? "pending" : isActive ? "active-link" : ""
                 }>
               {translations[selectedLanguage].about}
             </NavLink>
           </li>
           <li>
-            <NavLink to="/portfolio/work" className={({ isActive, isPending }) =>
+            <NavLink to="/work" className={({ isActive, isPending }) =>
                   isPending ? "pending" : isActive ? "active-link" : ""
                 }>
               {translations[selectedLanguage].work}
@@ -95,8 +95,8 @@ const Navbar = ({ selectedLanguage, onLanguageChange }) => {
       <div className="language-select">
         <select value={selectedLanguage} onChange={handleLanguageChange}>
           <option value="en">English</option>
-          <option value="de">German</option>
-          <option value="fr">French</option>
+          <option value="de">Deutsch</option>
+          <option value="fr">Français</option>
         </select>
       </div>
     </nav>

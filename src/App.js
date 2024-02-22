@@ -4,7 +4,7 @@ import About from "./Pages/About/About";
 import Home from "./Pages/Home/Home";
 import Work from "./Pages/Work/Work";
 import Contact from "./Pages/Contact/Contact"; // Import the Contact component
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 function App() {
   const [selectedLanguage, setSelectedLanguage] = useState("en");
@@ -19,9 +19,10 @@ function App() {
         <Navbar selectedLanguage={selectedLanguage} onLanguageChange={handleLanguageChange} />
         <Routes>
           <Route path="/portfolio" element={<Home selectedLanguage={selectedLanguage} />} />
-          <Route path="/portfolio/about" element={<About selectedLanguage={selectedLanguage} />} />
-          <Route path="/portfolio/work" element={<Work selectedLanguage={selectedLanguage} />} />
-          <Route path="/portfolio/contact" element={<Contact selectedLanguage={selectedLanguage} />} /> {/* Include the Contact component */}
+          <Route path="/about" element={<About selectedLanguage={selectedLanguage} />} />
+          <Route path="/work" element={<Work selectedLanguage={selectedLanguage} />} />
+          {/*<Route path="/contact" element={<Contact selectedLanguage={selectedLanguage} />} />*/}
+          <Route path="*" element={<Navigate to="/portfolio" />} />
         </Routes>
       </Router>
     </>
