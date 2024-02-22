@@ -25,9 +25,9 @@ const Card = ({ heading, image, url, github }) => {
       </div>
       <div className="info">
         <h3>{heading}</h3>
-        <a href={github} target="_blank" className="buttons">
+        {/*<a href={github} target="_blank" className="buttons">
           <AiFillGithub />
-        </a>
+        </a>*/}
       </div>
     </div>
   );

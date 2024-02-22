@@ -4,7 +4,7 @@ import Card from "../../Components/Card/Card";
 import Data from "../../Assets/Data.json";
 import Heading from "../../Components/Heading/Heading";
 import { LoadMore } from "../../Components/Loader/Loader";
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 
 import {
   BiLogoAngular,
@@ -18,7 +18,7 @@ import {
 } from "react-icons/bi";
 import { SiTailwindcss, SiExpress, SiDocker, SiSwagger, SiGit } from "react-icons/si";
 import { FaAndroid, FaApple } from "react-icons/fa";
-import { DiLinux, DiApple } from "react-icons/di";
+import { DiLinux, DiApple, DiDart } from "react-icons/di";
 import { animations } from "../../Styles/Animations/Animations";
 
 const Work = ({ selectedLanguage }) => {
@@ -40,15 +40,15 @@ const Work = ({ selectedLanguage }) => {
 
   const translations = {
     en: {
-      heading: "My Work",
+      heading: "Selected Projects",
       showMore: "Show More",
     },
     de: {
-      heading: "Meine Arbeit",
+      heading: "Ausgewählte Projekte",
       showMore: "Mehr anzeigen",
     },
     fr: {
-      heading: "Mon travail",
+      heading: "Projets sélectionnés",
       showMore: "Voir plus",
     },
   };
@@ -72,11 +72,11 @@ const Work = ({ selectedLanguage }) => {
         />
         <BiLogoHtml5
           style={{ color: "#e34f26", cursor: "pointer" }}
-          onClick={() => filterProjectsBySkill("html5")}
+          onClick={() => filterProjectsBySkill("html")}
         />
         <BiLogoCss3
           style={{ color: "#264de4", cursor: "pointer" }}
-          onClick={() => filterProjectsBySkill("css3")}
+          onClick={() => filterProjectsBySkill("css")}
         />
         <BiLogoJavascript
           style={{ color: "#f7df1e", cursor: "pointer" }}
@@ -86,17 +86,13 @@ const Work = ({ selectedLanguage }) => {
           style={{ color: "#007acc", cursor: "pointer" }} 
           onClick={() => filterProjectsBySkill("typescript")}
         />
-        <BiLogoNodejs
-          style={{ color: "#3c873a", cursor: "pointer" }}
-          onClick={() => filterProjectsBySkill("node.js")}
-        />
-        <BiLogoMongodb
-          style={{ color: "#4db33d", cursor: "pointer" }}
-          onClick={() => filterProjectsBySkill("mongodb")}
-        />
         <BiLogoFlutter
           style={{ color: "#02569b", cursor: "pointer" }}
           onClick={() => filterProjectsBySkill("flutter")}
+        />
+        <DiDart
+          style={{ color: "#0177B5", cursor: "pointer" }}
+          onClick={() => filterProjectsBySkill("dart")}
         />
         <FaAndroid
           style={{ color: "#a4c639", cursor: "pointer" }}
@@ -106,7 +102,6 @@ const Work = ({ selectedLanguage }) => {
           style={{ color: "#a8b5b8", cursor: "pointer" }}
           onClick={() => filterProjectsBySkill("ios")}
         />
-        {/* Add other icons with onClick handlers */}
       </motion.div>
       <div className="cards">
         {projects.map((value) => (

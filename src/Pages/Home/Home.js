@@ -32,7 +32,7 @@ const Home = ({ selectedLanguage }) => {
       <div className="home">
         <div className="info-section">
           <motion.h1 {...animations.h1}>
-            {translations[selectedLanguage].greeting},<br />
+            {translations[selectedLanguage].greeting}<br />
             {translations[selectedLanguage].name}
           </motion.h1>
           <motion.h3 {...animations.fade}>{translations[selectedLanguage].profession}</motion.h3>
