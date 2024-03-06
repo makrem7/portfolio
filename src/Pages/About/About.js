@@ -120,8 +120,8 @@ const About = ({ selectedLanguage }) => {
     },
   };
 
-  // If selectedLanguage is not provided, default to English
-  const language = selectedLanguage || "en";
+  // If selectedLanguage is not provided, default to Deutsch
+  const language = selectedLanguage || "de";
 
   return (
     <>

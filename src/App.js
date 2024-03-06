@@ -7,7 +7,7 @@ import Contact from "./Pages/Contact/Contact"; // Import the Contact component
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 function App() {
-  const [selectedLanguage, setSelectedLanguage] = useState("en");
+  const [selectedLanguage, setSelectedLanguage] = useState("de");
 
   const handleLanguageChange = (language) => {
     setSelectedLanguage(language);
